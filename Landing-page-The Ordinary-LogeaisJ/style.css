@@ -1,0 +1,232 @@
+body {
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #9D9490;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: #333333;
+    border-bottom: 2px solid #333333;
+}
+
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: #9D9490;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+nav > ul li:hover .sous{
+    display: block;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous a{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous a:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 70px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btn-black {
+    background-color: #333333;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 40px;
+    font-weight: 400;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 0.5px solid #333;
+}
+
+.btn-black:hover {
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+.banner {
+    padding: 100px 0;
+    margin: 0;
+    background-image: url('https://theordinary.com/on/demandware.static/-/Library-Sites-DeciemSharedLibrary/default/dw06e29db1/theordinary/homepage/slotE/rosehip-slotE.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2);
+  }
+
+#banner-p {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+
+.Container {
+    width: 900px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.Card-white {
+    background-color: #F8F8F8;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: -20px 40px;
+    margin: -5px;
+  }
+  
+  .card-white-img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 90px;
+    text-align: center;
+  }
+
+  #makeu-p {
+    margin-top:90px;
+  }
+
+  .banner-skincare {
+    background-color: #9D9490;
+    padding: 50px 0;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  #skincare-h2 {
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+
+  #skincare-p {
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+  }
+
+  #Footer {
+    background-color: #E7E7E7;
+    padding: 10px;
+    margin-top:100px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .réseaux {
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .réseaux:hover {
+    opacity: 50%;
+  }
+
+  #separation {
+    margin-top: 90px;
+    margin-left: 25%;
+    color: #9D9490;
+    width: 50%;
+    text-align: center;
+  }
+
+  @media (max-width:960px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .Container {
+        width: 700px;
+    }
+    #header {
+        width: 700px;
+    }
+  }
+
+  @media (max-width:400px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .Container {
+        width: 400px;
+    }
+    #header {
+        width: 400px;
+    }
+  }
